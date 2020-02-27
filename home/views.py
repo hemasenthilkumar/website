@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from home.models import Login
 
 def index(request):
-    return HttpResponse("Hey Users!")
+    return HttpResponse("Hey User!")
     all_users=Login.objects.all()
     html=''
     for users in all_users:
